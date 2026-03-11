@@ -1,0 +1,41 @@
+{
+	"name": "Parquet5",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dbo.products.parquet",
+				"folderPath": "bronze/product",
+				"fileSystem": "retail"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "product_id",
+				"type": "INT32"
+			},
+			{
+				"name": "product_name",
+				"type": "UTF8"
+			},
+			{
+				"name": "category",
+				"type": "UTF8"
+			},
+			{
+				"name": "price",
+				"type": "DECIMAL",
+				"precision": 10,
+				"scale": 2
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

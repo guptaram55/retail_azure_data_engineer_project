@@ -1,0 +1,9 @@
+{
+	"name": "retail-datafact",
+	"location": "centralindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "3f92d48d-5807-4bfc-8a6b-6e4ffab5d47e",
+		"tenantId": "39209d97-a77a-4617-995e-c962d880b1fa"
+	}
+}
